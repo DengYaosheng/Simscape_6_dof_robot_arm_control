@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vscr6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.0428E-05 0.0019197 0.017653"
+        rpy="0 0 0" />
+      <mass
+        value="0.46907" />
+      <inertia
+        ixx="0.00051314"
+        ixy="2.6056E-06"
+        ixz="-1.7548E-07"
+        iyy="0.00052812"
+        iyz="-1.3182E-05"
+        izz="0.00090536" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="joint1_Link">
+    <inertial>
+      <origin
+        xyz="-5.2679E-07 -0.011954 -0.0091154"
+        rpy="0 0 0" />
+      <mass
+        value="0.80997" />
+      <inertia
+        ixx="0.0012573"
+        ixy="-3.7432E-09"
+        ixz="4.5862E-09"
+        iyy="0.0010572"
+        iyz="0.00013038"
+        izz="0.0011455" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1095"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="joint1_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="joint1_x1_Link">
+    <inertial>
+      <origin
+        xyz="-5.654E-05 0.0055654 0.051426"
+        rpy="0 0 0" />
+      <mass
+        value="0.24441" />
+      <inertia
+        ixx="0.0001565"
+        ixy="-1.2509E-07"
+        ixz="1.8263E-07"
+        iyy="0.00016175"
+        iyz="2.2617E-05"
+        izz="0.00024408" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_x1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_x1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_x1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint1_Link" />
+    <child
+      link="joint1_x1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint1_x2_Link">
+    <inertial>
+      <origin
+        xyz="2.2529E-16 4.4062E-16 -0.064"
+        rpy="0 0 0" />
+      <mass
+        value="0.062458" />
+      <inertia
+        ixx="3.4914E-05"
+        ixy="8.6667E-34"
+        ixz="-1.1868E-19"
+        iyy="3.4914E-05"
+        iyz="-2.3872E-19"
+        izz="6.8985E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_x2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint1_x2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_x2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint1_Link" />
+    <child
+      link="joint1_x2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint2_Link">
+    <inertial>
+      <origin
+        xyz="3.2685E-07 0.0052 0.11426"
+        rpy="0 0 0" />
+      <mass
+        value="1.9112" />
+      <inertia
+        ixx="0.0035005"
+        ixy="3.1128E-09"
+        ixz="-1.1688E-08"
+        iyy="0.0033495"
+        iyz="8.5671E-05"
+        izz="0.0018798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.1271 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint1_Link" />
+    <child
+      link="joint2_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="joint2_x1_Link">
+    <inertial>
+      <origin
+        xyz="1.3401E-05 -0.0237 0.11543"
+        rpy="0 0 0" />
+      <mass
+        value="0.65154" />
+      <inertia
+        ixx="0.00036207"
+        ixy="1.8172E-07"
+        ixz="-1.1865E-07"
+        iyy="0.00053815"
+        iyz="9.2295E-06"
+        izz="0.000419" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint2_x1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint2_x1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_x1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint2_Link" />
+    <child
+      link="joint2_x1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint3_Link">
+    <inertial>
+      <origin
+        xyz="1.3792E-07 0.097191 0.13122"
+        rpy="0 0 0" />
+      <mass
+        value="1.3562" />
+      <inertia
+        ixx="0.0021706"
+        ixy="1.4305E-08"
+        ixz="1.5514E-08"
+        iyy="0.0020566"
+        iyz="-2.8564E-05"
+        izz="0.0010001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.27"
+      rpy="0 0 0" />
+    <parent
+      link="joint2_Link" />
+    <child
+      link="joint3_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="joint3_x1_Link">
+    <inertial>
+      <origin
+        xyz="4.1083E-06 0.12806 0.22216"
+        rpy="0 0 0" />
+      <mass
+        value="0.30778" />
+      <inertia
+        ixx="0.00014114"
+        ixy="-4.4352E-10"
+        ixz="-4.0819E-09"
+        iyy="0.00019153"
+        iyz="1.3389E-05"
+        izz="0.00016813" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint3_x1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint3_x1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_x1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint3_Link" />
+    <child
+      link="joint3_x1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint4_Link">
+    <inertial>
+      <origin
+        xyz="6.1161E-07 -0.10425 0.0046846"
+        rpy="0 0 0" />
+      <mass
+        value="0.61768" />
+      <inertia
+        ixx="0.00055793"
+        ixy="2.8317E-09"
+        ixz="-8.8693E-10"
+        iyy="0.00054324"
+        iyz="4.8876E-05"
+        izz="0.00049913" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.1038 0.248"
+      rpy="0 0 0" />
+    <parent
+      link="joint3_Link" />
+    <child
+      link="joint4_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="joint4_x1_Link">
+    <inertial>
+      <origin
+        xyz="-4.6917E-06 -0.12106 -0.027285"
+        rpy="0 0 0" />
+      <mass
+        value="0.27326" />
+      <inertia
+        ixx="0.00013057"
+        ixy="-2.1878E-09"
+        ixz="-7.557E-10"
+        iyy="0.00014782"
+        iyz="1.3389E-05"
+        izz="0.00018061" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint4_x1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint4_x1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4_x1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint4_Link" />
+    <child
+      link="joint4_x1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint5_Link">
+    <inertial>
+      <origin
+        xyz="-8.5464E-07 -0.0062257 0.09149"
+        rpy="0 0 0" />
+      <mass
+        value="0.46479" />
+      <inertia
+        ixx="0.00049014"
+        ixy="-4.5518E-10"
+        ixz="2.4859E-09"
+        iyy="0.00043134"
+        iyz="4.8874E-05"
+        izz="0.00043721" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint5_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint5_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 -0.1257 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint4_Link" />
+    <child
+      link="joint5_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="joint5_x1_Link">
+    <inertial>
+      <origin
+        xyz="6.8287E-06 0.04417 0.10408"
+        rpy="0 0 0" />
+      <mass
+        value="0.20208" />
+      <inertia
+        ixx="0.00010347"
+        ixy="-1.3774E-09"
+        ixz="-6.8418E-10"
+        iyy="0.00014394"
+        iyz="1.3388E-05"
+        izz="0.00010431" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint5_x1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint5_x1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5_x1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="joint5_Link" />
+    <child
+      link="joint5_x1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="joint6_Link">
+    <inertial>
+      <origin
+        xyz="9.6535E-05 0.00028572 -0.016515"
+        rpy="0 0 0" />
+      <mass
+        value="0.065416" />
+      <inertia
+        ixx="3.1992E-05"
+        ixy="-1.1746E-09"
+        ixz="-2.0078E-11"
+        iyy="3.1414E-05"
+        iyz="-9.5152E-08"
+        izz="5.9343E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint6_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vscr6/meshes/joint6_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.105 0.1"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="joint5_Link" />
+    <child
+      link="joint6_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="100"
+      velocity="10" />
+  </joint>
+</robot>
